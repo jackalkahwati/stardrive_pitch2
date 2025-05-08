@@ -3,43 +3,30 @@
 import { useState, useEffect, useRef } from "react";
 import SlideShell from "@/components/SlideShell";
 import TitleSlide from "@/components/slides/TitleSlide";
-import AgendaSlide from "@/components/slides/AgendaSlide";
-import ProblemSolutionSlide from "@/components/slides/ProblemSolutionSlide";
-import ArchitectureFitSlide from "@/components/slides/ArchitectureFitSlide";
-import TechnicalAdvantageSlide from "@/components/slides/TechnicalAdvantageSlide";
-import CompetitiveMoatSlide from "@/components/slides/CompetitiveMoatSlide";
-import RevenueRoadmapSlide from "@/components/slides/RevenueRoadmapSlide";
+import OpportunitySlide from "@/components/slides/OpportunitySlide";
+import ProductSlide from "@/components/slides/ProductSlide";
+import UseCasesSlide from "@/components/slides/UseCasesSlide";
+import WhyNowSlide from "@/components/slides/WhyNowSlide";
 import ValidationSlide from "@/components/slides/ValidationSlide";
+import RoadmapSlide from "@/components/slides/RoadmapSlide";
+import RevenueModelsSlide from "@/components/slides/RevenueModelsSlide";
 import TeamSlide from "@/components/slides/TeamSlide";
-import ContactSlide from "@/components/slides/ContactSlide";
-import ExecSummarySlide from "@/components/slides/ExecSummarySlide";
-import GapFillSlide from "@/components/slides/GapFillSlide";
-import MarketTimingSlide from "@/components/slides/MarketTimingSlide";
-import ProductRoadmapSlide from "@/components/slides/ProductRoadmapSlide";
-import ImmediateRevenueSlide from "@/components/slides/ImmediateRevenueSlide";
-import LongTermUpsideSlide from "@/components/slides/LongTermUpsideSlide";
-import UseOfFundsSlide from "@/components/slides/UseOfFundsSlide";
-import CloseSlide from "@/components/slides/CloseSlide";
-import TractionSlide from "@/components/slides/TractionSlide";
+import AskSlide from "@/components/slides/AskSlide";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Page() {
   const slides = [
     <TitleSlide />,
-    <ExecSummarySlide />,
-    <GapFillSlide />,
-    <ArchitectureFitSlide />,
-    <TechnicalAdvantageSlide />,
-    <CompetitiveMoatSlide />,
-    <MarketTimingSlide />,
-    <TractionSlide />,
-    <ProductRoadmapSlide />,
-    <ImmediateRevenueSlide />,
-    <LongTermUpsideSlide />,
-    <UseOfFundsSlide />,
+    <OpportunitySlide />,
+    <ProductSlide />,
+    <UseCasesSlide />,
+    <WhyNowSlide />,
+    <ValidationSlide />,
+    <RoadmapSlide />,
+    <RevenueModelsSlide />,
     <TeamSlide />,
-    <CloseSlide />,
+    <AskSlide />,
   ];
   const [idx, setIdx] = useState(0);
   const touchStartX = useRef<number | null>(null);
