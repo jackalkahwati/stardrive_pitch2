@@ -8,11 +8,17 @@ const TitleSlide: React.FC = () => (
 
     <div className="relative z-10 flex flex-col items-center">
       <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-white max-w-4xl leading-tight text-shadow">
-        StarDrive
+        AstroShield
       </h1>
       <p className="text-lg text-gray-300 mb-4 max-w-3xl">
-        The Agentic Operating System for Space: From Coilgun Interceptors to Editable Orbital Simulations
+        The Agentic Copilot for Space & Defense Ops
       </p>
+
+      <ul className="text-gray-300 text-base md:text-lg space-y-1 mb-6 list-disc list-inside">
+        <li>Turning real-time orbital data into autonomous CCDM plans</li>
+        <li>API-first platform → creators, devs, and operators can build on top</li>
+      </ul>
+
       <a
         href="https://calendly.com/jackalkahwati/meeting"
         target="_blank"

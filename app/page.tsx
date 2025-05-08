@@ -3,13 +3,13 @@
 import { useState, useEffect, useRef } from "react";
 import SlideShell from "@/components/SlideShell";
 import TitleSlide from "@/components/slides/TitleSlide";
-import OpportunitySlide from "@/components/slides/OpportunitySlide";
-import ProductSlide from "@/components/slides/ProductSlide";
-import UseCasesSlide from "@/components/slides/UseCasesSlide";
-import WhyNowSlide from "@/components/slides/WhyNowSlide";
-import ValidationSlide from "@/components/slides/ValidationSlide";
-import RoadmapSlide from "@/components/slides/RoadmapSlide";
-import RevenueModelsSlide from "@/components/slides/RevenueModelsSlide";
+import GapSlide from "@/components/slides/GapSlide";
+import SolutionSlide from "@/components/slides/SolutionSlide";
+import DemoSlide from "@/components/slides/DemoSlide";
+import WhyWinSlide from "@/components/slides/WhyWinSlide";
+import TractionSlide from "@/components/slides/TractionSlide";
+import BusinessModelSlide from "@/components/slides/BusinessModelSlide";
+import MarketTimingSlide from "@/components/slides/MarketTimingSlide";
 import TeamSlide from "@/components/slides/TeamSlide";
 import AskSlide from "@/components/slides/AskSlide";
 import { Button } from "@/components/ui/button";
@@ -18,13 +18,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function Page() {
   const slides = [
     <TitleSlide />,
-    <OpportunitySlide />,
-    <ProductSlide />,
-    <UseCasesSlide />,
-    <WhyNowSlide />,
-    <ValidationSlide />,
-    <RoadmapSlide />,
-    <RevenueModelsSlide />,
+    <GapSlide />,
+    <SolutionSlide />,
+    <DemoSlide />,
+    <WhyWinSlide />,
+    <TractionSlide />,
+    <BusinessModelSlide />,
+    <MarketTimingSlide />,
     <TeamSlide />,
     <AskSlide />,
   ];

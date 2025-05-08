@@ -1,9 +1,9 @@
 import React from "react";
 
 const deliverables = [
-  "Fielded kinetic system",
-  "Open simulation engine",
-  "Editable orbital world model",
+  "Ship operator UI + Dev API v1",
+  "Complete AFRL live fire test",
+  "Launch open docs & SDK",
 ];
 
 const AskSlide: React.FC = () => (
@@ -11,7 +11,7 @@ const AskSlide: React.FC = () => (
     <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Our Ask</h2>
 
     <p className="text-lg md:text-xl text-gray-300 text-center">
-      <span className="text-white font-semibold">$10M Seed / Series A</span>
+      <span className="text-white font-semibold">$2.5M pre-seed (Speedrun)</span>
     </p>
 
     <p className="text-gray-300 text-base md:text-lg text-center">To deliver:</p>
@@ -21,6 +21,10 @@ const AskSlide: React.FC = () => (
         <li key={d}>{d}</li>
       ))}
     </ul>
+
+    <p className="text-gray-300 text-base md:text-lg text-center max-w-xl mx-auto">
+      Looking for Speedrun mentors in AI infra, defense GTM, and creative-tool virality.
+    </p>
 
     <div className="text-center">
       <a

@@ -1,15 +1,20 @@
 import React from "react";
-import { Clock } from "lucide-react";
+
+const points = [
+  "$1.3 T DoD SDA & missile-defense spend (2025-2035)",
+  "100 k+ satellites projected by 2030 → congestion & hostile proximity",
+  "2025 = 'Year of AI agents' (Speedrun thesis) → we supply real-world agent stack",
+];
 
 const MarketTimingSlide: React.FC = () => (
   <div className="space-y-6">
     <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Market Timing</h2>
-    <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto text-center">
-      Hypersonics, ASAT, and proliferated LEO drive demand for fast-react interceptors. DoD is spending <span className="text-white font-semibold">$1.3&nbsp;T</span> over 10 years on SDA & missile defense, yet no funded solution exists for fuel-free, mobile kinetic response.
-    </p>
-    <div className="flex justify-center">
-      <Clock className="h-12 w-12 text-primary" />
-    </div>
+
+    <ul className="list-disc list-inside space-y-3 text-gray-300 text-base md:text-lg max-w-3xl mx-auto">
+      {points.map((p) => (
+        <li key={p}>{p}</li>
+      ))}
+    </ul>
   </div>
 );
 
