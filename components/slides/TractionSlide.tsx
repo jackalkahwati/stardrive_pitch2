@@ -1,8 +1,8 @@
 import React from "react";
 
 const points = [
-  "3 LOIs totaling $4.2M potential contracts (USSF, JRAC, allied defense)",
-  "SDA TAP Lab – Cohort 3 (live-ops sandbox)",
+  "3 proposals down-selected by JRAC / Dept. of Land Armaments",
+  "SDA TAP Lab participant – Cohorts 5, 6 & 7 (live-ops sandbox)",
   "SpaceWERX Direct-to-Phase II path – $1.25M non-dilutive pipeline",
   "NSF SBIR Phase I in review (coilgun + inference)",
   "TLE Orbit Explainer on Hugging Face – beats SGP-4 decay-risk accuracy",
