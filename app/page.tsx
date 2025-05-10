@@ -83,7 +83,7 @@ export default function Page() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center gap-4 py-4 bg-[#0a1929] border-t border-[#1e3a5f] flex-wrap">
+      <div className="print:hidden flex items-center justify-center gap-4 py-4 bg-[#0a1929] border-t border-[#1e3a5f] flex-wrap">
         <Button onClick={() => setIdx((i) => Math.max(i - 1, 0))} disabled={idx === 0} size="icon" variant="outline">
           <ChevronLeft className="h-4 w-4" />
         </Button>
