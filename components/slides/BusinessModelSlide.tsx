@@ -32,7 +32,7 @@ const BusinessModelSlide: React.FC = () => (
     </div>
 
     <p className="text-gray-300 text-base md:text-lg text-center max-w-2xl mx-auto">
-      <em>Long-tail upside:</em> simulation studios, university cubesats, indie devs needing "real physics" world models.
+      <em>Long-tail upside:</em> allied nations' defense agencies and commercial satellite operators looking to embed autonomous maneuvering.
     </p>
   </div>
 );
