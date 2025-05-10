@@ -30,3 +30,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  body { background: white; }
+  .print\:hidden { display: none !important; }
+  .slide-page-break { page-break-after: always; }
+}

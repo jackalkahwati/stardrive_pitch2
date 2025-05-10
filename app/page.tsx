@@ -13,7 +13,7 @@ import MarketTimingSlide from "@/components/slides/MarketTimingSlide";
 import TeamSlide from "@/components/slides/TeamSlide";
 import AskSlide from "@/components/slides/AskSlide";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Download } from "lucide-react";
 
 export default function Page() {
   const slides = [
@@ -60,6 +60,12 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-[#0a1929] flex flex-col">
+      {/* Export PDF button */}
+      <div className="print:hidden fixed top-4 right-4 z-20">
+        <Button size="sm" onClick={() => window.print()} className="flex items-center gap-2">
+          <Download className="h-4 w-4" /> Export PDF
+        </Button>
+      </div>
       <div className="flex-1 flex items-center justify-center" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         {/* Fade-in animation on slide change */}
         <SlideShell key={idx} index={idx} total={slides.length}>
