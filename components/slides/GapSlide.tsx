@@ -34,6 +34,10 @@ const GapSlide: React.FC = () => (
     <p className="text-lg md:text-xl text-center text-gray-300 max-w-2xl mx-auto">
       <span className="text-white font-semibold">Result:</span> Space operators have awareness but <span className="text-white font-semibold">no automated response</span>.
     </p>
+
+    <p className="text-gray-400 text-base md:text-lg text-center max-w-2xl mx-auto">
+      Manual decision loops often exceed <span className="font-semibold text-white">30&nbsp;minutes</span>—AstroShield completes the <em>detect&nbsp;→&nbsp;decide&nbsp;→&nbsp;act</em> cycle in <span className="font-semibold text-white">under&nbsp;15&nbsp;seconds</span>.
+    </p>
   </div>
 );
 

@@ -5,6 +5,7 @@ const steps = [
   "Predict intent with LLM-based Threat Engine",
   "Generate evasive maneuver plans (hide, decoy, dodge) via agents",
   "Execute / Push delta-V commands or operator briefs via secure uplink",
+  "Full loop closes in <15 s (sensor → command)"
 ];
 
 const SolutionSlide: React.FC = () => (
