@@ -37,4 +37,5 @@ body {
   .print\:hidden { display: none !important; }
   .slide-page-break { page-break-after: always; break-inside: avoid; background:#0a1929; color:white; zoom:0.75; display:flex; align-items:center; justify-content:center; }
   .slide-page-break .print\:hide-count { display:none !important; }
+  .slide-page-break:first-child{zoom:1 !important;}
 }

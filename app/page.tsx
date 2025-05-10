@@ -3,10 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import SlideShell from "@/components/SlideShell";
 import TitleSlide from "@/components/slides/TitleSlide";
-import GapSlide from "@/components/slides/GapSlide";
 import SolutionSlide from "@/components/slides/SolutionSlide";
 import DemoSlide from "@/components/slides/DemoSlide";
-import WhyWinSlide from "@/components/slides/WhyWinSlide";
 import TractionSlide from "@/components/slides/TractionSlide";
 import BusinessModelSlide from "@/components/slides/BusinessModelSlide";
 import MarketTimingSlide from "@/components/slides/MarketTimingSlide";
@@ -18,10 +16,8 @@ import { ChevronLeft, ChevronRight, Download } from "lucide-react";
 export default function Page() {
   const slides = [
     <TitleSlide />,
-    <GapSlide />,
     <SolutionSlide />,
     <DemoSlide />,
-    <WhyWinSlide />,
     <TractionSlide />,
     <BusinessModelSlide />,
     <MarketTimingSlide />,
@@ -86,7 +82,7 @@ export default function Page() {
       {/* Print-only full deck */}
       <div className="hidden print:block">
         {slides.map((s, i) => (
-          i === 1 ? null : (
+          (i === 1 || i === 4) ? null : (
             <SlideShell key={`print-${i}`} index={i} total={slides.length} noBreak={i === slides.length - 1}>
               {s}
             </SlideShell>
