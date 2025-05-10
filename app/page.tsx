@@ -62,7 +62,16 @@ export default function Page() {
     <div className="min-h-screen bg-[#0a1929] flex flex-col">
       {/* Export PDF button */}
       <div className="print:hidden fixed top-4 right-4 z-20">
-        <Button size="sm" onClick={() => window.print()} className="flex items-center gap-2">
+        <Button
+          size="sm"
+          onClick={() => {
+            const prev = document.title;
+            document.title = "astroshield";
+            window.print();
+            document.title = prev;
+          }}
+          className="flex items-center gap-2"
+        >
           <Download className="h-4 w-4" /> Export PDF
         </Button>
       </div>
@@ -77,9 +86,11 @@ export default function Page() {
       {/* Print-only full deck */}
       <div className="hidden print:block">
         {slides.map((s, i) => (
-          <SlideShell key={`print-${i}`} index={i} total={slides.length} noBreak={i === slides.length - 1}>
-            {s}
-          </SlideShell>
+          i === 1 ? null : (
+            <SlideShell key={`print-${i}`} index={i} total={slides.length} noBreak={i === slides.length - 1}>
+              {s}
+            </SlideShell>
+          )
         ))}
       </div>
 

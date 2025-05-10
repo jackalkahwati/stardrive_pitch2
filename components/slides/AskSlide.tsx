@@ -7,7 +7,7 @@ const deliverables = [
 ];
 
 const AskSlide: React.FC = () => (
-  <div className="space-y-8">
+  <div className="space-y-8 bg-[#0a1929] print:bg-[#0a1929]">
     <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Why $2.5M Pre-Seed Accelerates Us ×10</h2>
 
     <p className="text-lg md:text-xl text-gray-300 text-center">
