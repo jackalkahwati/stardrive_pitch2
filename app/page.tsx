@@ -77,7 +77,7 @@ export default function Page() {
       {/* Print-only full deck */}
       <div className="hidden print:block">
         {slides.map((s, i) => (
-          <SlideShell key={`print-${i}`} index={i} total={slides.length}>
+          <SlideShell key={`print-${i}`} index={i} total={slides.length} noBreak={i === slides.length - 1}>
             {s}
           </SlideShell>
         ))}
