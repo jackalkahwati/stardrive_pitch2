@@ -3,7 +3,7 @@ import React from "react";
 const rows = [
   { phase: "2025", gtm: "Gov pilots (TAP, AFRL)", revenue: "SBIR + pilot SAAS ($250–750 k)" },
   { phase: "2026", gtm: "SaaS licenses to fleet operators", revenue: "$30 k / sat / yr" },
-  { phase: "2027+", gtm: "Open API for devs & creators (usage-based)", revenue: "$ /1 k API calls" },
+  { phase: "2027+", gtm: "Open API for devs & creators (usage-based)", revenue: "$0.01 per API call" },
 ];
 
 const BusinessModelSlide: React.FC = () => (

@@ -8,7 +8,7 @@ const deliverables = [
 
 const AskSlide: React.FC = () => (
   <div className="space-y-8">
-    <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Our Ask</h2>
+    <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Why $2.5M Pre-Seed Accelerates Us ×10</h2>
 
     <p className="text-lg md:text-xl text-gray-300 text-center">
       <span className="text-white font-semibold">$2.5M pre-seed (Speedrun)</span>
@@ -26,16 +26,7 @@ const AskSlide: React.FC = () => (
       Looking for Speedrun mentors in AI infra, defense GTM, and creative-tool virality.
     </p>
 
-    <div className="text-center">
-      <a
-        href="https://calendly.com/jackalkahwati/meeting"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-6 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/80 transition-colors text-sm font-medium"
-      >
-        📅 Schedule Demo
-      </a>
-    </div>
+    {/* No CTA button in VC deck */}
   </div>
 );
 

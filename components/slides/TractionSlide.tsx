@@ -1,11 +1,11 @@
 import React from "react";
 
 const points = [
-  "SDA TAP Lab – Cohort 3 (live ops sandbox)",
-  "3 LOIs (U.S. Space Force, JRAC / Land Armaments, Allied defense)",
-  "NSF SBIR Phase I proposal in review (coilgun + inference)",
-  "SpaceWERX Direct-to-Phase II path ($1.25 M non-dilutive)",
-  "TLE Orbit Explainer on Hugging Face – beats SGP-4 in decay risk accuracy",
+  "3 LOIs totaling $4.2M potential contracts (USSF, JRAC, allied defense)",
+  "SDA TAP Lab – Cohort 3 (live-ops sandbox)",
+  "SpaceWERX Direct-to-Phase II path – $1.25M non-dilutive pipeline",
+  "NSF SBIR Phase I in review (coilgun + inference)",
+  "TLE Orbit Explainer on Hugging Face – beats SGP-4 decay-risk accuracy",
 ];
 
 const TractionSlide: React.FC = () => (

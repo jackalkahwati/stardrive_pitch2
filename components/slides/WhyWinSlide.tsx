@@ -18,7 +18,7 @@ const WhyWinSlide: React.FC = () => (
             <th className="px-4 py-2 text-left font-semibold text-white">Capability</th>
             <th className="px-4 py-2 text-left font-semibold text-white">AstroShield</th>
             <th className="px-4 py-2 text-left font-semibold text-white">Legacy SSA</th>
-            <th className="px-4 py-2 text-left font-semibold text-white">Sim-World SDK</th>
+            <th className="px-4 py-2 text-left font-semibold text-white">Game-Engine Sims</th>
           </tr>
         </thead>
         <tbody>

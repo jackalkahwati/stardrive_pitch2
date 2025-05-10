@@ -14,19 +14,10 @@ const TitleSlide: React.FC = () => (
         The Agentic Copilot for Space & Defense Ops
       </p>
 
-      <ul className="text-gray-300 text-base md:text-lg space-y-1 mb-6 list-disc list-inside">
-        <li>Turning real-time orbital data into autonomous CCDM plans</li>
-        <li>API-first platform → creators, devs, and operators can build on top</li>
-      </ul>
+      <p className="text-gray-300 text-base md:text-lg mb-6 max-w-xl">
+        &lt; 15&nbsp;s data-to-action loop for any satellite
+      </p>
 
-      <a
-        href="https://calendly.com/jackalkahwati/meeting"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-6 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/80 transition-colors text-sm font-medium"
-      >
-        Schedule Demo
-      </a>
     </div>
   </div>
 );
