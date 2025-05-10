@@ -32,7 +32,8 @@ body {
 }
 
 @media print {
-  body { background: white; }
+  @page { size: Letter landscape; margin: 0; }
+  html,body { width: 100%; height: 100%; margin: 0; background: white; }
   .print\:hidden { display: none !important; }
   .slide-page-break { page-break-after: always; }
 }
