@@ -6,7 +6,7 @@ const DemoSlide: React.FC = () => (
     <h2 className="text-2xl md:text-3xl font-bold text-white text-center">Live Demo Snapshot</h2>
 
     <div className="w-full max-w-4xl border border-gray-700 rounded-lg overflow-hidden shadow-lg">
-      <Image src="/demo2.png" alt="AstroShield — Live Trajectory Analysis" width={1600} height={900} className="object-cover" />
+      <img src="/demo2.png" alt="AstroShield — Live Trajectory Analysis" className="w-full h-auto" />
     </div>
 
     <p className="text-gray-300 text-base md:text-lg text-center max-w-2xl">

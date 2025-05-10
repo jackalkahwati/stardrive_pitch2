@@ -23,7 +23,7 @@ const TeamSlide: React.FC = () => (
       {members.map((m) => (
         <div key={m.name} className="bg-white/5 rounded-lg border border-gray-800 p-4 flex flex-col items-center text-center space-y-2">
           <div className="w-24 h-24 relative rounded-full overflow-hidden border border-primary/40">
-            <Image src={m.img} alt={m.name} fill style={{ objectFit: "cover" }} />
+            <img src={m.img} alt={m.name} className="w-full h-full object-cover" />
           </div>
           <p className="text-white font-semibold mt-2">{m.name}</p>
           <p className="text-gray-400 text-sm">{m.role}</p>
