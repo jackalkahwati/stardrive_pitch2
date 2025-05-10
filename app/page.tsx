@@ -10,14 +10,18 @@ import BusinessModelSlide from "@/components/slides/BusinessModelSlide";
 import MarketTimingSlide from "@/components/slides/MarketTimingSlide";
 import TeamSlide from "@/components/slides/TeamSlide";
 import AskSlide from "@/components/slides/AskSlide";
+import GapSlide from "@/components/slides/GapSlide";
+import WhyWinSlide from "@/components/slides/WhyWinSlide";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Download } from "lucide-react";
 
 export default function Page() {
   const slides = [
     <TitleSlide />,
+    <GapSlide />,
     <SolutionSlide />,
     <DemoSlide />,
+    <WhyWinSlide />,
     <TractionSlide />,
     <BusinessModelSlide />,
     <MarketTimingSlide />,
