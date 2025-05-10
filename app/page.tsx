@@ -66,11 +66,21 @@ export default function Page() {
           <Download className="h-4 w-4" /> Export PDF
         </Button>
       </div>
-      <div className="flex-1 flex items-center justify-center" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+      {/* Screen-only interactive viewer */}
+      <div className="print:hidden flex-1 flex items-center justify-center" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         {/* Fade-in animation on slide change */}
         <SlideShell key={idx} index={idx} total={slides.length}>
           <div className="animate-fadeIn w-full h-full">{slides[idx]}</div>
         </SlideShell>
+      </div>
+
+      {/* Print-only full deck */}
+      <div className="hidden print:block">
+        {slides.map((s, i) => (
+          <SlideShell key={`print-${i}`} index={i} total={slides.length}>
+            {s}
+          </SlideShell>
+        ))}
       </div>
 
       <div className="flex items-center justify-center gap-4 py-4 bg-[#0a1929] border-t border-[#1e3a5f] flex-wrap">
