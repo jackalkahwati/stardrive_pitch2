@@ -9,7 +9,7 @@ interface SlideShellProps {
 
 const SlideShell: React.FC<SlideShellProps> = ({ children, index, total, noBreak }) => {
   return (
-    <div className={`h-full w-full flex flex-col p-6 md:p-10 lg:p-12 relative overflow-y-auto ${noBreak ? '' : 'slide-page-break'} print:my-auto print:h-auto`}>
+    <div className={`h-full w-full flex flex-col p-6 md:p-10 lg:p-12 relative overflow-y-auto ${noBreak ? '' : 'slide-page-break'}`}>
       <div className="absolute top-0 left-0 h-1 bg-primary print:hidden" style={{ width: `${((index + 1) / total) * 100}%` }} />
       {children}
       <div className="absolute bottom-4 right-4 text-sm text-gray-500 print:hide-count">

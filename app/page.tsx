@@ -86,11 +86,9 @@ export default function Page() {
       {/* Print-only full deck */}
       <div className="hidden print:block">
         {slides.map((s, i) => (
-          (i === 1 || i === 4) ? null : (
-            <SlideShell key={`print-${i}`} index={i} total={slides.length} noBreak={i === slides.length - 1}>
-              {s}
-            </SlideShell>
-          )
+          <SlideShell key={`print-${i}`} index={i} total={slides.length} noBreak={i === slides.length - 1}>
+            {s}
+          </SlideShell>
         ))}
       </div>
 
