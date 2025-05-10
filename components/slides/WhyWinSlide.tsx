@@ -3,7 +3,7 @@ import React from "react";
 const rows = [
   { capability: "Agentic CCDM", astro: "✅", legacy: "✖", sdk: "✖" },
   { capability: "API-first", astro: "✅", legacy: "⚠ JSON feeds", sdk: "✅" },
-  { capability: "Real telemetry trained", astro: "✅ Space-Track / SDA", legacy: "⚠ Limited", sdk: "✖" },
+  { capability: "Real telemetry trained", astro: "✅ Space-tracking data", legacy: "⚠ Limited", sdk: "✖" },
   { capability: "Dual-use ready", astro: "DoD & commercial", legacy: "DoD only", sdk: "Gaming-only" },
 ];
 

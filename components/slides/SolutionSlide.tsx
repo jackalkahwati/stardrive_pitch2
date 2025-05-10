@@ -3,7 +3,7 @@ import React from "react";
 const steps = [
   "Ingest TLE / radar / optical streams (sub-sec)",
   "Predict intent with LLM-based Threat Engine",
-  "Generate CCDM plans (Camouflage · Concealment · Deception · Maneuver) via agents",
+  "Generate evasive maneuver plans (hide, decoy, dodge) via agents",
   "Execute / Push delta-V commands or operator briefs via secure uplink",
 ];
 
