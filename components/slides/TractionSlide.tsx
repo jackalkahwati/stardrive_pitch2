@@ -1,7 +1,7 @@
 import React from "react";
 
 const points = [
-  "3 proposals down-selected by JRAC / Dept. of Land Armaments",
+  "3 proposals down-selected by the Pentagon's Joint Rapid Acquisition Committee (JRAC) – vetted by an SES surface-warfare lead",
   "SDA TAP Lab participant – Cohorts 5, 6 & 7 (live-ops sandbox)",
   "SpaceWERX Direct-to-Phase II path – $1.25M non-dilutive pipeline",
   "NSF SBIR Phase I in review (coilgun + inference)",
